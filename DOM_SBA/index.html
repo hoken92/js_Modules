@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="form-container">
+      <h1>Create a Review</h1>
+      <form action="#" id="review-form">
+        <label for="name"
+          >Full Name:
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            autofocus
+          />
+        </label>
+        <label for="restaurant-name"
+          >Resturant Name:
+          <br />
+          <input
+            type="text"
+            name="restaurant-name"
+            id="restaurant-name"
+            placeholder="Pizza Planet"
+        /></label>
+        <label for="rating"
+          >Rating:
+          <br />
+          <input
+            type="number"
+            name="rating"
+            id="rating"
+            min="1"
+            max="5"
+            placeholder="1-5"
+            required
+          />
+        </label>
+        <label for="visit-date"
+          >Date Visited:
+          <br />
+          <input type="date" name="visit-date" id="visit-date" />
+        </label>
+        <label for="review-info"
+          >Resturant Review:
+          <br />
+          <textarea
+            name="review-info"
+            id="review-info"
+            rows="12"
+            cols="100"
+            minlength="15"
+            maxlength="500"
+            form="review-form"
+            placeholder="Leave your review here..."
+            required
+          ></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit-btn" />
+      </form>
+      <div id="alertMessage"></div>
+    </div>
+    <div id="info-container">
+      <h1>Your Reviews:</h1>
+      <div class="review">
+        <p class="review-header">
+          Name | Restaurant Name | Rating | Date
+          <span class="date-stamp">Date Posted</span>
+        </p>
+        <p class="review-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          voluptatem deleniti veritatis molestias dolores, neque voluptate
+          corporis tenetur. Nostrum facere vel inventore quod ex minus
+          accusamus, maiores, excepturi est voluptates explicabo. Hic omnis
+          repellendus repudiandae eveniet ab laborum. Nulla itaque ullam
+          distinctio, deleniti in esse nam provident explicabo dolor corrupti
+          molestias libero tempore? Cumque tempore vel illo fugiat ipsam amet
+          accusantium sunt quibusdam eius possimus consequatur dolor, earum
+          deserunt facilis aliquam laudantium magni perspiciatis. Non rerum
+          voluptatum, fugit architecto, deleniti quas eveniet assumenda
+          voluptatibus temporibus, saepe dolorum. Quisquam rerum laborum,
+          eveniet beatae quis error molestias provident distinctio, quas culpa
+          velit. Ducimus non exercitationem minus voluptas. Hic ex odio atque
+          exercitationem soluta totam architecto earum. A vero dolores impedit
+          animi corporis deserunt. Totam iste aspernatur adipisci nostrum ipsa,
+          obcaecati sapiente voluptatem.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
